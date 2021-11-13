@@ -10,7 +10,7 @@ export const MotionBox: React.FC<MotionBoxProps> = motion(chakra.div)
 
 export type SectionProps = {
 	children: ReactChild[] | ReactChild
-	delay: number
+	delay?: number
 }
 
 const Section = ({ children, delay = 0 }: SectionProps) => (
