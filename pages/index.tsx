@@ -1,6 +1,20 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Box, Container, Heading } from '@chakra-ui/layout'
-import { Button, Image, useColorModeValue } from '@chakra-ui/react'
+import {
+	Box,
+	Button,
+	Container,
+	Heading,
+	Image,
+	Link,
+	List,
+	UnorderedList,
+	ListItem,
+	Icon,
+	useColorModeValue,
+	SimpleGrid,
+	GridItem,
+} from '@chakra-ui/react'
+import { IoLogoFacebook, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5'
 import NextLink from 'next/link'
 import React from 'react'
 import { BioSection, BioYear } from '../components/bio'
@@ -49,7 +63,7 @@ export default function Page(props: PageProps) {
 						/>
 					</Box>
 				</Box>
-				<Section delay={0.1}>
+				<Section delay={0.3}>
 					<Heading as="h3" variant="section-title">
 						Work
 					</Heading>
@@ -68,7 +82,7 @@ export default function Page(props: PageProps) {
 					</Box>
 				</Section>
 
-				<Section delay={0.1}>
+				<Section delay={0.3}>
 					<Heading as="h3" variant="section-title">
 						Bio
 					</Heading>
@@ -90,13 +104,77 @@ export default function Page(props: PageProps) {
 					</BioSection>
 				</Section>
 
-				<Section delay={0.1}>
+				<Section delay={0.3}>
+					<Heading as="h3" variant="section-title">
+						Skills
+					</Heading>
+					<SimpleGrid columns={[1, 2, 2]} gap={4}>
+						<GridItem ml={4}>
+							<UnorderedList>
+								<ListItem>React</ListItem>
+								<ListItem>TypeScript</ListItem>
+								<ListItem>NextJS</ListItem>
+							</UnorderedList>
+						</GridItem>
+						<GridItem ml={4}>
+							<UnorderedList>
+								<ListItem>NodeJS</ListItem>
+								<ListItem>ASP.NET</ListItem>
+							</UnorderedList>
+						</GridItem>
+					</SimpleGrid>
+				</Section>
+
+				<Section delay={0.3}>
 					<Heading as="h3" variant="section-title">
 						I ♥
 					</Heading>
 					<Paragraph>
 						Art, Music and Singing (My favorite band is OneOkRock)
 					</Paragraph>
+				</Section>
+				<Section delay={0.3}>
+					<Heading as="h3" variant="section-title">
+						On the web
+					</Heading>
+					<List>
+						<ListItem>
+							<Link href="https://github.com/phamminhhieu85" target="_blank">
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoLogoGithub} />}
+								>
+									@novaera
+								</Button>
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link
+								href="https://www.facebook.com/harry.pham.3760"
+								target="_blank"
+							>
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoLogoFacebook} />}
+								>
+									@minh_hieu
+								</Button>
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link href="#" target="_blank">
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoLogoDiscord} />}
+								>
+									@novaera
+								</Button>
+							</Link>
+						</ListItem>
+					</List>
 				</Section>
 			</Container>
 		</Layout>

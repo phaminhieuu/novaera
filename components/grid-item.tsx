@@ -48,7 +48,7 @@ export const WorkGridItem = ({
 	thumbnail,
 }: WorkGridItemProps) => (
 	<Box w="100%" align="center">
-		<NextLink href={`works/${id}`}>
+		<NextLink href={`/works/${id}`}>
 			<LinkBox cursor="pointer">
 				<Image
 					src={thumbnail}
@@ -56,7 +56,7 @@ export const WorkGridItem = ({
 					className="grid-item-thumbnail"
 					placeholder="blur"
 				/>
-				<LinkOverlay href={`works/${id}`}>
+				<LinkOverlay href={`/works/${id}`}>
 					<Text mt={2} fontSize={20}>
 						{title}
 					</Text>

@@ -17,6 +17,11 @@ const Works = () => {
 							A platform for job hunting for developer
 						</WorkGridItem>
 					</Section>
+					<Section>
+						<WorkGridItem id="tagent" title="Tagent" thumbnail={thumbTagent}>
+							A platform for job hunting for developer
+						</WorkGridItem>
+					</Section>
 				</SimpleGrid>
 			</Container>
 		</Layout>

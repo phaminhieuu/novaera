@@ -139,7 +139,7 @@ const VoxelDog = () => {
 					mt="calc(0px - var(--spinner-size)"
 				/>
 			)}
-			Dog
+			
 		</Box>
 	)
 }
