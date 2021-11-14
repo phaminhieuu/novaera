@@ -24,8 +24,8 @@ const Work = () => {
 						<span>ReactJS - TypeScript, ASP.Net Core</span>
 					</ListItem>
 				</List>
-				<WorkImage src="/images/works/tagent_01.jpg" alt="Tagent" />
-				<WorkImage src="/images/works/tagent_01.jpg" alt="Tagent" />
+				<WorkImage src="/images/works/tagent_02.jpg" alt="Tagent" />
+				<WorkImage src="/images/works/tagent_03.jpg" alt="Tagent" />
 			</Container>
 		</Layout>
 	)

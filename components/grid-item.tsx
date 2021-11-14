@@ -1,6 +1,13 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import {
+	Box,
+	Text,
+	LinkBox,
+	LinkOverlay,
+	Center,
+	useColorModeValue,
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { ReactChild } from 'react'
 
@@ -66,6 +73,18 @@ export const WorkGridItem = ({
 			</LinkBox>
 		</NextLink>
 	</Box>
+)
+
+export const UpdateSoonGridItem = () => (
+	<Center
+		w="100%"
+		h="55%"
+		align="center"
+		bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+		className="grid-item-thumbnail"
+	>
+		<Text fontSize={16}>Update soon...</Text>
+	</Center>
 )
 
 export const GridItemStyle = () => (

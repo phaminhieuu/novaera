@@ -1,6 +1,6 @@
 import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/layout'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { UpdateSoonGridItem, WorkGridItem } from '../components/grid-item'
 import thumbTagent from '../public/images/works/tagent_01.jpg'
 import Layout from '../components/layouts/article'
 
@@ -18,9 +18,7 @@ const Works = () => {
 						</WorkGridItem>
 					</Section>
 					<Section>
-						<WorkGridItem id="tagent" title="Tagent" thumbnail={thumbTagent}>
-							A platform for job hunting for developer
-						</WorkGridItem>
+						<UpdateSoonGridItem/>
 					</Section>
 				</SimpleGrid>
 			</Container>
